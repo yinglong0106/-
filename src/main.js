@@ -85,6 +85,15 @@ Vue.use(Element, {
 
 Vue.config.productionTip = false
 
+Vue.prototype.$bus = new Vue()
+
+router.beforeEach((to,from,next) =>{
+  console.log(from)
+  console.log(store)
+  store.commit('app/SET_FROMROUTE', from);
+  next();
+})
+
 new Vue({
   el: '#app',
   router,

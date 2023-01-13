@@ -3,7 +3,7 @@
   .main-container {
     min-height: 100%;
     transition: margin-left .28s;
-    margin-left: $base-sidebar-width;
+    margin-left: 260px;
     position: relative;
   }
 
@@ -14,7 +14,7 @@
   .sidebar-container {
     -webkit-transition: width .28s;
     transition: width 0.28s;
-    width: $base-sidebar-width !important;
+    width:250px !important;
     background-color: $base-menu-background;
     height: 100%;
     position: fixed;
@@ -136,7 +136,7 @@
         padding: 0 !important;
 
         .svg-icon {
-          margin-left: 20px;
+          margin-left: 5px;
         }
 
       }
@@ -200,6 +200,7 @@
 
   .nest-menu .el-submenu>.el-submenu__title,
   .el-menu-item {
+    padding-left:10px !important;
     &:hover {
       // you can use $subMenuHover
       background-color: rgba(0, 0, 0, 0.06) !important;

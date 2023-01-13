@@ -59,6 +59,7 @@ export function removeExpiresIn() {
 }
 
 export function getUser() {
+  console.log(JSON.parse(Cookies.get(UserKey)))
   return JSON.parse(Cookies.get(UserKey))
 }
 

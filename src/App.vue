@@ -14,7 +14,8 @@
 					return title ? `${title} - ${process.env.VUE_APP_TITLE}` : process.env.VUE_APP_TITLE
 				}
 			}
-		}
+		},
+
 	}
 </script>
 
@@ -30,7 +31,9 @@
 	.flex-center {
 		align-items: center;
 	}
-
+  .direction-clo{
+    flex-direction: column;
+  }
 	.flex1 {
 		flex: 1;
 	}

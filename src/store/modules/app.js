@@ -7,7 +7,8 @@ const state = {
     hide: false
   },
   device: 'desktop',
-  size: Cookies.get('size') || 'medium'
+  size: Cookies.get('size') || 'medium',
+  fromRoute:null
 }
 
 const mutations = {
@@ -37,6 +38,9 @@ const mutations = {
   },
   SET_SIDEBAR_HIDE: (state, status) => {
     state.sidebar.hide = status
+  },
+  SET_FROMROUTE(state, data){
+    state.fromRoute = data
   }
 }
 

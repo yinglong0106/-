@@ -21,7 +21,7 @@
 				<el-tab-pane label="接受服务" name="first">
 					<searchCom @toSearch='search' :searchResult='searchResult' placeholderText='请输入你要找的机构名称或者联系电话'></searchCom>
 					<el-table border :data="tableData">
-						<el-table-column label="姓名" prop="name" align="center" width="80" />
+						<el-table-column label="姓名" prop="name" align="center"  />
 						<el-table-column label="联系电话" prop="phone" align="center" width="160"/>
 						<el-table-column label="机构名称" prop="orgName" align="center" />
 						<el-table-column label="角色类型" prop="role" align="center" />
@@ -96,7 +96,7 @@
 				//
 			},
 			handleClick() {
-				
+
 			},
 			openOperation(row,type) {
 				this.openRow = row
@@ -115,7 +115,7 @@
 					orgType: '',
 					address: '',
 					status: '2'
-					
+
 				},{
 					name: '',
 					phone: '（+86）18650767213',
@@ -131,7 +131,7 @@
 					phone: '（+86）18650767213'
 				}]
 			}
-			
+
 		},
 		created() {
 			this.tableDataFirst.push(this.row)
